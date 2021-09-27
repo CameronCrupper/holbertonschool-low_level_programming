@@ -1,3 +1,4 @@
+/**printing with puts*/
 #include<stdio.h>
 int main(void)
 {

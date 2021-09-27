@@ -1,5 +1,5 @@
 /**
- * printing with puts
+ * main - printing with puts
  */
 #include<stdio.h>
 int main(void)

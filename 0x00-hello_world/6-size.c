@@ -1,10 +1,10 @@
 /**
- * main - 
+ * main - printf all data types for this computer
  *
- * Return: 
+ * Return: nothing other than integers
  */
 #include<stdio.h>
-int main()
+int main(void)
 {
 	char charType;
 	int intType;

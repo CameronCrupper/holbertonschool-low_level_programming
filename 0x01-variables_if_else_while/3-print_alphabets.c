@@ -1,6 +1,6 @@
 /**
-*
-*
+*main - displaying alphabet from lowercase to uppercase
+*Return: display nothing
 */
 #include<stdio.h>
 int main(void)

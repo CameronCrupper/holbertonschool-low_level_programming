@@ -4,7 +4,6 @@
 *add - integers to add
 *@a: num1
 *@b: num2
-*@c: sum
 *Return: sum
 */
 int add(int a, int b)

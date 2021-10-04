@@ -3,7 +3,6 @@
  *mul - multiply 2 number
  *@a: number 1
  *@b: number 2
- *@c: solution
  *Return: nothing else
  */
 int mul(int a, int b)

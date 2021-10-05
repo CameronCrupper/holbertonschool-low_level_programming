@@ -9,6 +9,7 @@ int main(void)
 	int n;
 
 	for (n = 1; n <= 100; n++)
+	printf("\n");
 	{
 		if (n % 3 == 0 && n % 5 == 0)
 			printf("FizzBuzz ");
@@ -19,6 +20,5 @@ int main(void)
 		else
 			printf("%d ", n);
 	}
-	printf("\n");
 	return (0);
 }

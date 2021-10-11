@@ -1,11 +1,9 @@
 #include "main.h"
-#include "strlen.c"
 /**
  *_strchr - locate a specific character in a string
  *@s: string
  *@c: letter to start at
  *Return: rest of string
- *
  */
 char *_strchr(char *s, char c)
 {

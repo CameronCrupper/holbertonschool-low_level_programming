@@ -2,20 +2,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *free_grid - return a pointer to a 2 dimensional array
- *@grid: 2 dimmensional array
- *@height: columns
- *Return: 2 dimensional array
+ *print_grid - prints a grid of integers
+ *@grid: address of the 2 dimmensional grid
+ *@width: width of the grid
+ *@height: height of the grid
  */
-void free_grid(int **grid, int height)
+int **alloc_grid(int width, int height)
 {
-	int z;
-	int n;
-	int w;
-
-	int (*10())[height]
-	{
-		int (*z)[n] = malloc(w * height * sizeof(int));
-		return (z);
-	}
+	
 }

@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	a = max - min;
+
 	if (ptr == NULL)
 	{
 		return (NULL);

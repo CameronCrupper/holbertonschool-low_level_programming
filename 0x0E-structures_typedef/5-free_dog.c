@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- *
- *
+ *free_dog - free dog from the function
+ *@d: variable
  *
  *
  */

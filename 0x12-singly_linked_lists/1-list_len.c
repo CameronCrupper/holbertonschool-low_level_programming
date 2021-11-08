@@ -13,14 +13,14 @@ size_t list_len(const list_t *h)
 	const list_t *ptr = h;
 	int count = 0;
 
-	while (h != NULL)
+	if (h == NULL)
 	{
-	if (ptr->next == h)
+		return (count);
+	}
+	while (ptr != NULL)
 	{
 		count++;
 		ptr = ptr->next;
-	}
-	h = h->next;
 	}
 	return (count);
 }

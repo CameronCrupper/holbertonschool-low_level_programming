@@ -12,10 +12,6 @@ size_t print_listint(const listint_t *h)
 	size_t a = 0;
 	const listint_t *ptr = h;
 
-	if (ptr == NULL)
-	{
-		return (-1);
-	}
 	while (ptr)
 	{
 		printf("%d\n", ptr->n);

@@ -10,7 +10,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *a;
-	unsigned int b;
+	int b;
 
 	while (head == NULL)
 	{

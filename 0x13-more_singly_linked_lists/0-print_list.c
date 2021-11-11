@@ -9,16 +9,14 @@
 */
 size_t print_listint(const listint_t *h)
 {
-	unsigned int a = 0;
+	size_t a = 0;
 	const listint_t *ptr = h;
 
 	while (ptr != NULL)
 	{
 	if (ptr == NULL)
 	{
-		printf("[0] (nil)\n");
-		h = ptr->next;
-		a++;
+		return (-1);
 	}
 	else
 	{

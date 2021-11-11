@@ -13,9 +13,7 @@ int pop_listint(listint_t **head)
 	unsigned int b;
 
 	if (!*head)
-	{
 		return (0);
-	}
 
 	a = *head;
 	b = (*head)->n;

@@ -15,6 +15,13 @@ void print_binary(unsigned long int n)
 
 	for (a = 1 << 31; a > 0; a >>= 1)
 	{
-		_putchar(n & a);
+		if (n & a)
+		{
+		_putchar(1);
+		}
+		else
+		{
+			_putchar(0);
+		}
 	}
 }

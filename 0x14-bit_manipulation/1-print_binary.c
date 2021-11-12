@@ -20,11 +20,11 @@ void print_binary(unsigned long int n)
 	{
 	if (n & a)
 	{
-		_putchar(1);
+		printf("1");
 	}
 	else
 	{
-		_putchar(0);
+		printf("0");
 	}
 	}
 }

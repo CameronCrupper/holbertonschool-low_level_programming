@@ -17,11 +17,11 @@ unsigned int a;
 	{
 		if (n & a)
 		{
-			printf("1");
+			_putchar('1');
 		}
 		else
 		{
-			printf("0");
+			_putchar('0');
 		}
 	}
 }

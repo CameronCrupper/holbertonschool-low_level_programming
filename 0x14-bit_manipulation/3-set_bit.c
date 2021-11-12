@@ -11,14 +11,13 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int a;
 
 	if (index > (10 * sizeof(*n)) - 1)
 	{
 		return (-1);
 	}
 	*n = *n | (1 << index);
-	if (n & a)
+	if (n)
 	{
 		printf("1");
 	}
@@ -26,5 +25,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		printf("0");
 	}
-	return (a);
+	return (1);
 }

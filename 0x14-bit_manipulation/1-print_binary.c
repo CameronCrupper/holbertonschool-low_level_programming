@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  *print_binary - of a number
- *@n: number
+ *@n: number to print
  *
  *
  *
@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 	{
 		if (n & a)
 		{
-		_putchar(1);
+			_putchar(1);
 		}
 		else
 		{

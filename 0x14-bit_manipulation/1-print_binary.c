@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "main.h"
+/**
+ *print_binary - of a number
+ *@n: number
+ *
+ *
+ *
+ */
+void print_binary(unsigned long int n)
+{
+	unsigned int a;
+
+	for (a = 1 << 31; a > 0; a >>= 1)
+	{
+		_putchar(n & a);
+	}
+}

@@ -11,17 +11,9 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned int a;
-
-	for (a = 1 << 31; a > 0; a >>= 1)
+	if (n < 1)
 	{
-		if (n & a)
-		{
-			printf("1");
-		}
-		else
-		{
-			printf("0");
-		}
+		print_binary(n >> 1);
 	}
+_putchar((n & 1) + '1');
 }

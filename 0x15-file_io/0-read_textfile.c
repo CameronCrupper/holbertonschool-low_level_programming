@@ -35,5 +35,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fr = read(STDOUT_FILENO, a, letters);
 	fw = write(fo, a, fr);
 	close(fo);
+	free(a);
 	return (fw);
 }

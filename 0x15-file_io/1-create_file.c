@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (text_content == NULL)
 	{
-		fo = open(" ", O_RDONLY);
+		fo = open(filename, O_RDONLY);
 	}
 	if (fo == -1)
 	{

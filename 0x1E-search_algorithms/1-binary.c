@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "sort.h"
+#include "search_algos.h"
 
 /**
  * binary_search - It search to the number to find

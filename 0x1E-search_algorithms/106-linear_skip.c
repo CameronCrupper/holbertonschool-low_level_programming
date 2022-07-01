@@ -1,38 +1,43 @@
 #include "search_algos.h"
 
 /**
- * print_array - Prints an array of integers
+ * linear_skip -  searches for a value in a sorted skip list of integers
+ * @list: pointer to head
+ * @value: value searched
  *
- * @array: The array to be printed
- * @size: Number of elements in @array
+ * Return: NULL or pointer
+ *
+ * Description: prints value using sqr root
  */
-void print_array(const int *array, size_t size)
-{
-size_t i;
-
-i = 0;
-while (array && i < size)
-{
-if (i > 0)
-printf(", ");
-printf("%d", array[i]);
-++i;
-}
-printf("\n");
-}
-
-/**
-* linear_skip - Searches for value in sorted array
-* @list: Pointer to 1st element of list
-* @value: Value to search for
-* Return: Index of value or -1 if NULL
-**/
-
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-if (!value || !list)
-return (NULL);
+	skiplist_t *node, *leap;
 
-printf("Value checked at index [%d] = [%d]\n", value, value);
-return (list);
+	if (list == NULL)
+		return (NULL);
+
+	for (node = leap = list; leap->next != NULL && leap->n < value;)
+	{
+		node = leap;
+		if (leap->express != NULL)
+		{
+			leap = leap->express;
+			printf("Value checked at index [%ld] = [%d]\n",
+					leap->index, leap->n);
+		}
+		else
+		{
+			while (leap->next != NULL)
+				leap = leap->next;
+		}
+	}
+
+	printf("Value found between indexes [%ld] and [%ld]\n",
+			node->index, leap->index);
+
+	for (; node->index < leap->index && node->n < value; node = node->next)
+		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+
+	return (node->n == value ? node : NULL); 
 }

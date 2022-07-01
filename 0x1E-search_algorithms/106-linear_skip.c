@@ -1,50 +1,38 @@
 #include "search_algos.h"
 
 /**
- * linear_skip - function that searches for a value in an
- * array of integers using the linear_skip algorithm
- * @list: is a pointer to the head of the list to search
- * @value: is the value to search     
- * Return: function must return the index where value is located
+ * print_array - Prints an array of integers
+ *
+ * @array: The array to be printed     
+ * @size: Number of elements in @array
  */
+void print_array(const int *array, size_t size)
+{
+size_t i;
+
+i = 0;
+while (array && i < size)
+{
+if (i > 0)
+printf(", ");
+printf("%d", array[i]);
+++i;
+}
+printf("\n");
+}
+
+/**
+* linear_skip - Searches for value in sorted array
+* @list: Pointer to 1st element of list
+* @value: Value to search for
+* Return: Index of value or -1 if NULL
+**/
+
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-	skiplist_t *head = list,  *tmp = NULL;
+if (!value || !list)
+return (NULL);      
 
-	if (list)
-	{
-		while (head->n < value && head->express)
-		{     
-			/*if (head->express)
-			{
-				tmp = head->express;
-				if (head->n >= value)
-				{
-					break;
-				}*/
-				tmp = head;
-				head = head->express;
-				printf("Value checked at index [%lu] = [%d]\n", head->index, head->n);
-			/*}
-			else
-			{
-				head = head->next;
-			}*/	
-		}
-		if (head->n >= value)
-			printf("Value found between indexes [%lu] and [%lu]\n", tmp->index, head->index);
-
-		/*while (head)
-		{
-			printf("Value checked at index [%lu] = [%d]\n", head->index, head->n);
-			if (head->n == value)
-			{
-				return (head);
-			}
-			head = head->next;
-		}*/
-
-
-	}
-	return (NULL);   
+printf("Value checked at index [%d] = [%d]\n", value, value);
+return (list);
 }

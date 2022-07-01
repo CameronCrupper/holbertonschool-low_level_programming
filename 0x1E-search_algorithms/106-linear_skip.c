@@ -3,7 +3,7 @@
 /**
  * print_array - Prints an array of integers
  *
- * @array: The array to be printed     
+ * @array: The array to be printed
  * @size: Number of elements in @array
  */
 void print_array(const int *array, size_t size)
@@ -31,7 +31,7 @@ printf("\n");
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 if (!value || !list)
-return (NULL);      
+return (NULL);
 
 printf("Value checked at index [%d] = [%d]\n", value, value);
 return (list);
